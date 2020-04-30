@@ -19,7 +19,7 @@ body{
     min-height: 800px;
 }
 .col1-bg{
-    background-image: url("/assets/img_Background.png");
+    background-image: url("img_Background.png");
     height:100vh;
     float:right;
     width:100vh;
