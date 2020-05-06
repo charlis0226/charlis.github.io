@@ -3,45 +3,95 @@
         <head>
             <title>Tiffany & Nicholas</title>
             <link rel="stylesheet" type="text/css" href="index.css">
+            <link href="animation.css" rel="stylesheet">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         </head>
         <body>
-            <div id="01" class="full-height">
-                <div class="col1-bg"></div>
-                <div class="col1-txt">
-                    <h1>Electreatment</h1><br />
-                   <a>˙</a><a>Prototype</a><br />
-                   <a>˙</a><a>Concept</a><br />
-                   <a>˙</a><a href="#04">About</a><br />
-
-                    <div class="switch-button">
-                        <button>English</button>
-                        <button>繁體中文</button>
+            
+            <div class="scroll-container">
+                <div class="scroll-area">
+                    <div class="col1-bg"></div>
+                    <div class="col1-txt">
+                        <h1>Electreatment</h1><br />
+                       <a>˙</a><a href="#02" class="animated fadeIn">Prototype</a><br />
+                       <a>˙</a><a href="#03" class="animated fadeIn animated-delay-03s" >Concept</a><br />
+                       <a>˙</a><a href="#04" class="animated fadeIn animated-delay-06s">About</a><br />
+    
+                        <div class="switch-button">
+                            <button onclick="toEnglish()">English</button>
+                            <button onclick="toChinese()">繁體中文</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="scroll-area" id = "02" >
+                    <div class="container">
+                        <div class="col-2"  >
+                            <h1 id="title">吃狗肉比起吃豬肉，更是一件不合理的事嗎？</h1>
+                            <p id="text"><br />因物種差異而決定個體價值的思想，其實就是物種歧視。<br />
 
-            <div id='04' class="full-height">
-                <div class="container">
-                    <div class="col">
-                             <h1> Designer</h1>
-                    </div>
+                                「Electreatment」是一組虐待原生動物的水體電擊裝置，而原生動物是被科學家定義為物種之中最低等的動物。以娛樂的方式觸發電擊，期望藉此讓大眾思考：生物階級是否存在矛盾？並自由定義 Electreatment 的本質是玩具還是刑具。
+                                <br /><br />
+                                
+                                我們以類似套圈圈、投球機的遊戲體驗打造：<br />
+                                
+                                若感測器感應到小鋼球被投進圓管後，將觸發電擊而達成虐待。這樣的行為之於肉眼看不見的原生動物是否無傷大雅？那麼以相同的手段對待魚類、家畜、甚至人類呢？
+                                <br /><br />
+                                
+                                「在思考與現實間的斷裂之處，都是有血有肉的生命。」</p>
+                                <img class="img2" src="img_prototype-2.png">
+                        </div>
+                        <div class="col-2">
+                            <img class="img1" src="img_gallery04.png">
+                        </div>
+                </div>
+                </div>
+                <div class="scroll-area" id = "03">
+                    
+                    <div class="slideshow-container">
+
+                      <div class="mySlides fade">
+                        <img src="img_gallery05.png" style="width:100%">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img src="img_gallery06.png" style="width:100%">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img src="img_gallery07.png" style="width:100%">
+                      </div>
+
+                      </div>
+
+                      <div style="text-align:center; margin-top: -40px;">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                      </div>
+                </div>
+                <div class="scroll-area" id = "04">
+                    <div class="container">
+                        <div class="col">
+                            <h1> Designer</h1>
+                        </div>
                         <div class="col p-left-10">
                             <img src="img_Tiffany.jpg" >
                         </div>
                         <div class="col p-left-10p">
-                        <h3>Cai-Hua,Xie</h3>
+                        <h3>Cai-Hua, Xie</h3>
                         <p>Taiwan Tech<br />Department of Design</p>
                         </div>
                         <div class="col p-left-10">
                             <img src="img_Nick.jpg" >
                         </div>
                         <div class="col p-left-10p">
-                        <h3>Yi-Ju,Lin</h3>
+                        <h3>Yi-Ju, Lin</h3>
                         <p>Taiwan Tech<br />Department of Design</p>
                         </div>
-
+    
                         <div class="containerdivNewLine"></div>
-
+    
                         <div class=space></div>                        
                         <div class="col">
                             <h1> Instructor</h1>
@@ -50,42 +100,85 @@
                                 <img src="img_Chiao.png" >
                             </div>
                             <div class="col p-left-10p">
-                            <h3>Chiao-Wei,Ho</h3>
+                            <h3>Chiao-Wei, Ho</h3>
                             <p>Digital Medicine Lab<br />Founder</p>
                             </div>
-                    
+                        
                         <div class="containerdivNewLine"></div>
-
+    
                         <div class=space></div>                        
                         <div class="col">
                             <h1> Programmer</h1>
                             </div>
                             <div class="col p-left-10">
-                                <img src="img_Chiao.png" >
+                                <img src="img_Well.png" >
                             </div>
                             <div class="col p-left-10p">
-                            <h3>Jhe-Wei,Jhang</h3>
+                            <h3>Jhe-Wei, Jhang</h3>
                             <p>Taiwan Tech<br />Department of Appiled<br />Science and Technology</p>
                             </div>
-
+    
                             <div class="containerdivNewLine"></div>
-
+    
                             <div class=space></div>                        
                             <div class="col">
                                 <h1> Special Thanks</h1>
                                 </div>
                                 <div class="col p-left-10">
-                                <p>Advisor | 梁容輝、蕭勝文、施黃旭</p>
-                                <p>Model | 黃端亭</p>
-                                <p>Photographer | 王新媛、涂靜林</p>
-                                <p>3D modeling assistance | 林鴻叡、張喬、鍾官諭</p>
-                                <p>Web Developer | 陳彥家</p>
-                               </div>
-                            </div>
-                            
+                                <p>Advisor｜梁容輝、蕭勝文、施皇旭<br />
+                                Model｜黃端亭<br />
+                                Photographer｜王新媛、涂靜林<br />
+                                3D modeling assistance｜林鴻叡、張喬、鍾官諭<br />
+                                Web Developer｜陳彥家</p>
+                             </div>
+                        </div>
+                                
                 </div>
             </div>
 
+            <script>
+                var slideIndex = 0;
+                showSlides();
 
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3500); // Change image every 2 seconds
+                }
+
+                function toEnglish(){
+                   let title = document.getElementById("title");
+                   let text  = document.getElementById("text");
+                   title.innerHTML = "Is dog meat consumption more unreasonable than pork consumption?";
+                   text.innerHTML  = "The notion that individual values are determined by their species categories is actually Speciesism, a form of discrimination based on species membership.<br />";
+                   text.innerHTML += "Electreatment is a set of electric shock devices in the water that irritate protozoans which are defined by scientists as the lowest ranking animals in the animal hierarchy. We expect to make the public contemplate upon the contradiction of biological classification system through the electric shock triggering in an entertaining way, and people can freely categorize whether the Electreatment is a toy or a torture tool.<br />";
+                   text.innerHTML += "This device is designed and accessed through gaming experience:<br />";
+                   text.innerHTML += "When the small steel ball is thrown into the tube and sensed by the sensor, it will trigger an electric shock and achieve the process of irritation. Is the behavior to irritate those invisible protozoans innocuous to us? What about the same practice of irritation through electric shocks on fish, livestock, and even human beings?<br />";           
+                   text.innerHTML += "\"How much that coming apart of Thought and Reality belong to flesh and blood.\" – Prof. C. Diamond\"";                                  
+                }
+
+                function toChinese(){
+                   let title = document.getElementById("title");
+                   let text  = document.getElementById("text");
+                   title.innerHTML = "吃狗肉比起吃豬肉，更是一件不合理的事嗎？";
+                   text.innerHTML  = "<br />因物種差異而決定個體價值的思想，其實就是物種歧視。<br />";
+                   text.innerHTML += "「Electreatment」是一組虐待原生動物的水體電擊裝置，而原生動物是被科學家定義為物種之中最低等的動物。以娛樂的方式觸發電擊，期望藉此讓大眾思考：生物階級是否存在矛盾？並自由定義 Electreatment 的本質是玩具還是刑具。<br /><br />";
+                   text.innerHTML += "我們以類似套圈圈、投球機的遊戲體驗打造：<br />";
+                   text.innerHTML += "若感測器感應到小鋼球被投進圓管後，將觸發電擊而達成虐待。這樣的行為之於肉眼看不見的原生動物是否無傷大雅？那麼以相同的手段對待魚類、家畜、甚至人類呢？<br /><br />";
+                   text.innerHTML += "「在思考與現實間的斷裂之處，都是有血有肉的生命。」";
+                } 
+            </script>
         </body>
+
     </html>
